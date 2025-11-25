@@ -39,41 +39,51 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &kp EQUAL      &kp N1       &kp N2           &kp N3       &kp N4       &kp N5       &tog 1                                                                  &mo 3        &kp N6     &kp N7      &kp N8      &kp N9        &kp N0     &kp MINUS
-        &kp TAB        &kp Q        &kp W            &kp F        &kp P        &kp B        &none                                                                   &none        &kp J      &kp L       &kp U       &kp Z         &kp SEMI   &kp BSLH
-        &kp ESC        &hm LGUI A   &hm LALT R       &hm LCTRL S  &hm LSHFT T  &kp G        &none             &kp LCTRL   &kp LALT &kp LGUI   &kp RCTRL             &none        &kp M      &hm LSHFT N &hm LCTRL E &hm RALT I    &hm LGUI O &kp SQT
-        &kp LSHFT      &kp Y        &kp X            &kp C        &kp D        &kp V                                      &kp HOME &kp PG_UP                                     &kp K      &kp H       &kp COMMA   &kp DOT       &kp FSLH   &kp RSHFT
-        &mo 2          &kp GRAVE    &kp CAPS         &kp LEFT     &kp RIGHT                     &hm LCTRL TAB &lt 2 SPACE &kp END  &kp PG_DN  &lt 1 BSPC &hm LCTRL RET                      &kp UP      &kp DOWN    &kp LBKT      &kp RBKT   &mo 2
+        &kp EQUAL      &kp N1       &kp N2           &kp N3       &kp N4       &kp N5       &tog 4                                                                  &mo 3        &kp N6     &kp N7      &kp N8      &kp N9        &kp N0        &kp MINUS
+        &kp TAB        &kp Q        &kp W            &kp F        &kp P        &kp B        &none                                                                   &none        &kp J      &kp L       &kp U       &kp Z         &kp SEMI      &kp BSLH
+        &kp ESC        &hm LGUI A   &hm LALT R       &hm LCTRL S  &hm LSHFT T  &kp G        &none             &kp LCTRL   &kp LALT &kp LGUI   &kp RCTRL             &none        &kp M      &hm LSHFT N &hm LCTRL E &hm RALT I    &hm LGUI O    &kp SQT
+        &kp LSHFT      &kp Y        &kp X            &kp C        &kp D        &kp V                                      &kp HOME &kp PG_UP                                     &kp K      &kp H       &kp COMMA   &kp DOT       &kp FSLH      &kp RSHFT
+        &mo 2          &kp GRAVE    &kp CAPS         &kp LEFT     &kp RIGHT                     &hm LCTRL TAB &lt 2 SPACE &kp END  &kp PG_DN  &lt 1 BSPC &hm LCTRL RET                      &kp UP      &kp DOWN    &kp LBKT      &kp RBKT      &mo 2
       >;
     };
     lower_layer {
       display-name = "Kp";
       bindings = <
-        &trans         &trans       &trans           &trans       &trans       &trans       &trans                                                                  &trans       &trans     &trans      &trans      &trans        &trans     &trans
-        &trans         &trans       &kp LS(N2)       &kp LS(N3)   &kp LS(N4)   &kp LS(N5)   &none                                                                   &none        &kp LS(N6) &kp PIPE    &kp LS(N7)  &kp LS(RA(S)) &trans     &trans
-        &trans         &kp ESC      &kp LBKT         &kp LS(N9)   &kp LBRC     &kp TILDE    &none             &trans      &trans   &trans     &trans                &none        &kp UNDER  &kp RBRC    &kp LS(N0)  &kp RBKT      &kp LS(N8) &trans
-        &trans         &kp LS(N1)   &kp LS(RA(SEMI)) &kp DQT      &kp SQT      &kp GRAVE                                  &trans   &trans                                        &kp MINUS  &kp PLUS    &kp EQUAL   &kp RA(N5)    &kp BSLH   &trans
-        &trans         &trans       &trans           &trans       &trans                        &trans        &trans      &trans   &trans     &trans     &trans                             &trans      &trans      &trans        &trans     &trans
+        &trans         &trans       &trans           &trans       &trans       &trans       &trans                                                                  &trans       &trans     &trans      &trans      &trans        &trans        &trans
+        &trans         &trans       &kp LS(N2)       &kp LS(N3)   &kp LS(N4)   &kp LS(N5)   &none                                                                   &none        &kp LS(N6) &kp PIPE    &kp LS(N7)  &kp LS(RA(S)) &trans        &trans
+        &trans         &kp ESC      &kp LBKT         &kp LS(N9)   &kp LBRC     &kp TILDE    &none             &trans      &trans   &trans     &trans                &none        &kp UNDER  &kp RBRC    &kp LS(N0)  &kp RBKT      &kp LS(N8)    &trans
+        &trans         &kp LS(N1)   &kp LS(RA(SEMI)) &kp DQT      &kp SQT      &kp GRAVE                                  &trans   &trans                                        &kp MINUS  &kp PLUS    &kp EQUAL   &kp RA(N5)    &kp BSLH      &trans
+        &trans         &trans       &trans           &trans       &trans                        &trans        &trans      &trans   &trans     &trans     &trans                             &trans      &trans      &trans        &trans        &trans
       >;
     };
     raise_layer {
       display-name = "Fn";
       bindings = <
-        &trans         &trans       &trans           &trans       &trans       &trans       &trans                                                                  &trans       &trans     &trans      &trans      &trans        &trans     &trans
-        &trans         &trans       &kp LC(RIGHT)    &trans       &trans       &kp LC(LEFT) &none                                                                   &none        &kp DOWN   &kp RIGHT   &kp N7      &kp N8        &kp N9     &trans
-        &trans         &kp ESC      &trans           &kp PG_UP    &kp LC(W)    &kp LC(DEL)  &none             &trans      &trans   &trans     &trans                &none        &trans     &kp N0      &kp N4      &kp N5        &kp N6     &trans
-        &trans         &kp TAB      &kp HOME         &kp PG_DN    &kp END      &kp DEL                                    &trans   &trans                                        &kp UP     &kp LEFT    &kp N1      &kp N2        &kp N3     &trans
-        &trans         &trans       &trans           &trans       &trans                        &trans        &trans      &trans   &trans     &trans     &trans                             &trans      &trans      &trans        &trans     &trans
+        &trans         &trans       &trans           &trans       &trans       &trans       &trans                                                                  &trans       &trans     &trans      &trans      &trans        &trans        &trans
+        &trans         &trans       &kp LC(RIGHT)    &trans       &trans       &kp LC(LEFT) &none                                                                   &none        &kp DOWN   &kp RIGHT   &kp N7      &kp N8        &kp N9        &trans
+        &trans         &kp ESC      &trans           &kp PG_UP    &kp LC(W)    &kp LC(DEL)  &none             &trans      &trans   &trans     &trans                &none        &trans     &kp N0      &kp N4      &kp N5        &kp N6        &trans
+        &trans         &kp TAB      &kp HOME         &kp PG_DN    &kp END      &kp DEL                                    &trans   &trans                                        &kp UP     &kp LEFT    &kp N1      &kp N2        &kp N3        &trans
+        &trans         &trans       &trans           &trans       &trans                        &trans        &trans      &trans   &trans     &trans     &trans                             &trans      &trans      &trans        &trans        &trans
       >;
     };
     adjust_layer {
       display-name = "Mod";
       bindings = <
-        &kp F12        &kp F1       &kp F2           &kp F3       &kp F4       &kp F5       &trans                                                                  &trans       &kp F6     &kp F7      &kp F8      &kp F9        &kp F10    &kp F11
-        &none          &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader                                                             &bootloader  &none      &none       &none       &none         &none      &none
-        &studio_unlock &none        &none            &none        &none        &none        &none             &none       &none    &bt BT_CLR &none                 &stp STP_BAT &none      &none       &none       &none         &none      &none
-        &none          &none        &none            &none        &macro_ver   &none                                      &none    &none                                         &none      &none       &none       &none         &none      &none
-        &none          &none        &none            &none        &none                         &none         &none       &none    &none      &bl BL_TOG &rgb_ug RGB_TOG                    &bl BL_INC  &bl BL_DEC  &none         &none      &none
+        &kp F12        &kp F1       &kp F2           &kp F3       &kp F4       &kp F5       &trans                                                                  &trans       &kp F6     &kp F7      &kp F8      &kp F9        &kp F10       &kp F11
+        &none          &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader                                                             &bootloader  &none      &none       &none       &none         &none         &none
+        &studio_unlock &none        &none            &none        &none        &none        &none             &none       &none    &bt BT_CLR &none                 &stp STP_BAT &none      &none       &none       &none         &none         &none
+        &none          &none        &none            &none        &macro_ver   &none                                      &none    &none                                         &none      &none       &none       &none         &none         &none
+        &none          &none        &none            &none        &none                         &none         &none       &none    &none      &bl BL_TOG &rgb_ug RGB_TOG                    &bl BL_INC  &bl BL_DEC  &none         &none         &none
+      >;
+    };
+    qwerty {
+      display-name = "Qwt";
+      bindings = <
+        &kp EQUAL      &kp N1       &kp N2           &kp N3       &kp N4       &kp N5       &tog 4                                                                  &mo 3        &kp N6     &kp N7      &kp N8      &kp N9        &kp N0        &kp MINUS
+        &kp TAB        &kp Q        &kp W            &kp E        &kp R        &kp T        &none                                                                   &none        &kp Y      &kp U       &kp I       &kp O         &kp P         &kp BSLH
+        &kp ESC        &hm LGUI A   &hm LALT S       &hm LCTRL D  &hm LSHFT F  &kp G        &none             &kp LCTRL   &kp LALT &kp LGUI   &kp RCTRL             &none        &kp H      &hm LSHFT J &hm LCTRL K &hm RALT L    &hm LGUI SEMI &kp SQT
+        &kp LSHFT      &kp Z        &kp X            &kp C        &kp V        &kp B                                      &kp HOME &kp PG_UP                                     &kp N      &kp M       &kp COMMA   &kp DOT       &kp FSLH      &kp RSHFT
+        &mo 2          &kp GRAVE    &kp CAPS         &kp LEFT     &kp RIGHT                     &hm LCTRL TAB &lt 2 SPACE &kp END  &kp PG_DN  &lt 1 BSPC &hm LCTRL RET                      &kp UP      &kp DOWN    &kp LBKT      &kp RBKT      &mo 2
       >;
     };
     extra1 {
