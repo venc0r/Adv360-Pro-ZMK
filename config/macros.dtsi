@@ -230,6 +230,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp E>, <&kp N4>
         , <&macro_release &kp LALT>
         ;
@@ -241,6 +242,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp F>, <&kp N6>
         , <&macro_release &kp LALT>
         ;
@@ -252,6 +254,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp F>, <&kp C>
         , <&macro_release &kp LALT>
         ;
@@ -263,6 +266,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp D>, <&kp F>
         , <&macro_release &kp LALT>
         ;
@@ -300,6 +304,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp C>, <&kp N4>
         , <&macro_release &kp LALT>
         ;
@@ -311,6 +316,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp D>, <&kp N6>
         , <&macro_release &kp LALT>
         ;
@@ -322,6 +328,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N0>, <&kp N0>, <&kp D>, <&kp C>
         , <&macro_release &kp LALT>
         ;
@@ -333,6 +340,7 @@
     tap-ms = <10>;
     bindings
         = <&macro_press &kp LALT>
+        , <&macro_tap>
         , <&kp N1>, <&kp E>, <&kp N9>, <&kp E>
         , <&macro_release &kp LALT>
         ;
